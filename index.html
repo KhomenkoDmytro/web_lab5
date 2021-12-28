@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>LAB1</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+		body{
+			margin:40px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="GifPlayer/dist/gifplayer.css">
+</head>
+<body>
+
+<!-- Accordion -->
+<div id="accordion">
+	<h3>Dolor</h3>
+	<div><ul>
+		<li>
+			<div>Lorem ipsum dolor sit.</div>
+		</li>
+		<li>
+			<div>Lorem ipsum dolor</div>
+		</li>
+		<li>
+			<div>Lorem ipsum dolor</div>
+		</li>
+	</ul></div>
+	<h3>Ipsum</h3>
+	<div><ul>
+		<li><div>Lorem ipsum dolor</div></li>
+	</ul></div>
+	<h3>Lorem</h3>
+		<div><ul>
+			<li> <div>Lorem ipsum dolor</div></li>
+			<li> <div>Lorem ipsum dolor sit amet.</div></li>
+		</ul></div>
+</div>
+
+<!-- Datepicker -->
+<h2 >Datepicker</h2>
+<input type="text" id="datepicker">
+
+
+<!-- Menu -->
+<h2 ч>Menu</h2>
+<ul style="width:100px;" id="menu">
+	<li><div>Sit</div>
+	<ul>
+		<li>
+			<div>Lorem ipsum dolor sit amet.</div>
+		</li>
+		<li>
+			<div>amet</div>
+		</li>
+		<li>
+			<div>Lorem, ipsum dolor.</div>
+		</li>
+	</li>
+	</ul>
+	<li><div>dolor</div></li>
+	<li><div>ipsum</div>
+		<ul>
+			<li>
+				<div>lorem</div>
+			</li>
+			<li>
+				<div>ipsum</div>
+			</li>
+			<li>
+				<div>Lorem, ipsum dolor.</div>
+			</li>
+		</ul>
+	</li>
+	<li><div>Lorem</div>
+	<ul>
+		<li>
+			<div>ipsum</div>
+		</li>
+		<li>
+			<div>dolor</div>
+		</li>
+		<li>
+			<div>sit</div>
+		</li>
+	</ul></li>
+</ul>
+
+<img class="gifplayer" src="https://i.gifer.com/fybt.gif" data-playon="hover">
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript" src="GifPlayer/dist/jquery.gifplayer.js"></script>
+<script>
+$( "#accordion" ).accordion();
+$( "#datepicker" ).datepicker();
+$( "#menu" ).menu();
+$('.gifplayer').gifplayer();
+</script>
+</body>
+</html>
